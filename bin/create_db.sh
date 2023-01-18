@@ -1,0 +1,7 @@
+psql postgres << END
+
+CREATE DATABASE testorm;
+CREATE ROLE testorm WITH LOGIN SUPERUSER PASSWORD 'testorm';
+GRANT ALL PRIVILEGES ON DATABASE testorm TO testorm;
+
+END

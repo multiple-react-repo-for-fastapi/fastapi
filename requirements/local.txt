@@ -1,0 +1,20 @@
+-r base.txt
+
+# Testing
+# ------------------------------------------------------------------------------
+mypy==0.931  # https://github.com/python/mypy
+django-stubs==1.9.0  # https://github.com/typeddjango/django-stubs
+pytest==7.0.1  # https://github.com/pytest-dev/pytest
+pytest-sugar==0.9.4  # https://github.com/Frozenball/pytest-sugar
+pytest-asyncio==0.20.3  # https://github.com/pytest-dev/pytest-asyncio
+
+# Code quality
+# ------------------------------------------------------------------------------
+black==22.1.0  # https://github.com/psf/black
+isort==5.10.1  # https://github.com/pycqa/isort/
+pre-commit==2.17.0  # https://github.com/pre-commit/pre-commit
+
+# Django
+# ------------------------------------------------------------------------------
+factory-boy==3.2.1  # https://github.com/FactoryBoy/factory_boy
+pytest-django==4.5.2  # https://github.com/pytest-dev/pytest-django
