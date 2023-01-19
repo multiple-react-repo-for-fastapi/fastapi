@@ -1,12 +1,22 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Request
+from fastapi.responses import HTMLResponse, RedirectResponse
 
-from app.core.models import User
+from app.fast import templates
 
 
 router = APIRouter()
 
 
-@router.get("/hello")
-async def hello():
-    await User.objects.acreate(name="random")
-    return {"message": f"Hello World, count: {await User.objects.acount()}"}
+@router.get("/", response_class=HTMLResponse)
+def default_page(request: Request):
+    if "session" in request.cookies:
+        return templates.TemplateResponse("login.html", {"request": request})
+    return templates.TemplateResponse("splash.html", {"request": request})
+
+
+@router.post("/login")
+def login():
+    response = RedirectResponse("/")
+    response.set_cookie("session", "123")
+    response.status_code = 302
+    return response

@@ -13,6 +13,23 @@ Includes support for:
 
 ### Usage
 
+Clone the frontend technologies. As shown below
+
+```bash
+git clone git@github.com:multiple-react-repo-for-fastapi/unauthenticated-react-webpack.git frontend
+git clone git@github.com:multiple-react-repo-for-fastapi/authenticated-react-vite.git frontend
+```
+
+> **Note**
+> The unauthenticated portion is a webpack + Babel project and the authenticated portion
+> is uses Vite + SWC using TypeScript. They demonstrate how to integrate with either
+> technology, but it's not recommended to use webpack -- based on my knowledge -- due to
+> slower builds, and the JS ecosystem is generally moving away from webpack as 
+> alternatives grow more mature.
+
+For more info to deploy Vite + React from the backend, follow their guide:
+https://vitejs.dev/guide/backend-integration.html
+
 To get started, run:
 
 ```bash
