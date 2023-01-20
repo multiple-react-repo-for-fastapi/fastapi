@@ -1,15 +1,12 @@
-# FastAPI + Django ORM Template
+# FastAPI + React integration
 
-A GitHub template to quickly get a FastAPI project
-that needs an awesome ORM up and running.
+This demonstration displays how to integrate FastAPI or really any backend
+with a React project (either using webpack or Vite). The purpose of this
+is so that, insted of using JWTs, you are able to send HttpOnly stateful
+session backed cookies to the client by delivering an HTML file from the
+server rather than from a different domain.
 
-If you only need the Django ORM to write scripts,
-feel free to simply use https://github.com/Andrew-Chen-Wang/django-orm-template
-which does not include FastAPI.
-
-Includes support for:
-- Either SQLite or PostgreSQL
-- Pre-commit
+The purpose is security, bottom line.
 
 ### Usage
 
