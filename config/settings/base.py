@@ -22,13 +22,13 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # then overwrite the settings above with:
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'testorm',
-        'USER': 'testorm',
-        'PASSWORD': 'testorm',
-        'HOST': 'localhost',
-        'PORT': 5432,
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "testorm",
+        "USER": "testorm",
+        "PASSWORD": "testorm",
+        "HOST": "localhost",
+        "PORT": 5432,
     }
 }
 

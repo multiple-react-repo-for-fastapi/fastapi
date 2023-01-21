@@ -1,11 +1,10 @@
 from django import setup as django_setup
-from fastapi import FastAPI
-from fastapi.staticfiles import StaticFiles
-from fastapi.templating import Jinja2Templates
-
 from django.core.handlers.asgi import ASGIHandler
 
 from app.core.api.a_view import api_router, template_router
+from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
 
 
 django_setup(set_prefix=False)

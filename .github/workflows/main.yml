@@ -69,4 +69,3 @@ jobs:
         pip install -r requirements/local.txt
     - name: Test
       run: pytest tests/
-

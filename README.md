@@ -21,7 +21,7 @@ git clone git@github.com:multiple-react-repo-for-fastapi/authenticated-react-vit
 > The unauthenticated portion is a webpack + Babel project and the authenticated portion
 > is uses Vite + SWC using TypeScript. They demonstrate how to integrate with either
 > technology, but it's not recommended to use webpack -- based on my knowledge -- due to
-> slower builds, and the JS ecosystem is generally moving away from webpack as 
+> slower builds, and the JS ecosystem is generally moving away from webpack as
 > alternatives grow more mature.
 
 For more info to deploy Vite + React from the backend, follow their guide:
