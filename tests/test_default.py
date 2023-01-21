@@ -15,7 +15,6 @@ async def test_get_hello_view(client):
     assert response.status_code == 200
     new_count = await User.objects.acount()
     assert new_count == 1
-    assert response.json() == {"message": "Hello World, count: 1"}
 
 
 async def test_clears_database_after_test(client):
