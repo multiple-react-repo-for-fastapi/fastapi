@@ -18,8 +18,8 @@ def login():
 @template_router.get("/{full_path:path}", response_class=HTMLResponse)
 def get(request: Request, full_path: str):
     if request.user.is_authenticated:
-        return templates.TemplateResponse("dashboard.html", {"request": request})
-    return templates.TemplateResponse("landing.html", {"request": request})
+        return templates.TemplateResponse("login.html", {"request": request})
+    return templates.TemplateResponse("splash.html", {"request": request})
 
 
 @api_router.get("/user")
