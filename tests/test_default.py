@@ -3,7 +3,7 @@ import pytest
 from app.core.models import User
 
 
-pytestmark = [pytest.mark.django_db, pytest.mark.asyncio]
+pytestmark = [pytest.mark.django_db(transaction=True), pytest.mark.asyncio]
 
 
 async def test_get_hello_view(client):
